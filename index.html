@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Switcher</title>
+  <style>
+    .image-container {
+      width: 800px;
+      height: 600px;
+      border: 0px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* overflow: hidden; */
+      /* background-color: pink; */
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- <div class="image-container" id="imageContainer"> -->
+    <img src="https://tse4.mm.bing.net/th?id=OIP.UlM8SlGLWi8GJEIEKisrfQHaEK&pid=Api&P=0&h=180" alt="" id="currentImage" height="300px" width="300px">
+  <!-- </div> -->
+  <div class="buttons">
+    <button onclick="changeImage('https://tse3.mm.bing.net/th?id=OIP.e0jNNDkc_fkVbtecn4DlQwHaFj&pid=Api&P=0&h=180')">PANDA</button>
+    <button onclick="changeImage('https://tse1.mm.bing.net/th?id=OIP.nQVwafGfqnV2NHEIWaOiUAHaFp&pid=Api&P=0&h=180')">LION</button>
+    <button onclick="changeImage('https://tse2.mm.bing.net/th?id=OIP.UDdlBiZpu41T3E7noyU9nQHaEo&pid=Api&P=0&h=180')">TIGER</button>
+    <button onclick="changeImage('https://tse4.mm.bing.net/th?id=OIP.zWDKu-OUPxkyHizMgZf3ogHaFj&pid=Api&P=0&h=180')">ELEPHANT</button>
+  </div>
+  <script>
+    function changeImage(imageSrc) {
+      const imageElement = document.getElementById('currentImage');
+      imageElement.src = imageSrc;
+    }
+  </script>
+</body>
+</html>
